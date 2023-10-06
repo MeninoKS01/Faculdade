@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário</title>
+    </head>
+    
+    <body>
+        <form method="POST" name="form1" action="pag11.html">
+
+            Nome: <input type="text" name="txt" maxlength="15"> <br>
+
+            Número: <input type="number" name="txtnumero" > <br>
+
+            Senha: <input type="password" name="txtsenha"> <br> 
+
+            Mensagem: <br> <textarea cols="50" rows="8"> </textarea> <br>
+
+            Estado: 
+            <select name="estado">
+                <option value="sp"> São Paulo </option>
+                <option value="rj"> Rio de Janeiro </option>
+                <option value="ba"> Bahia </option>
+            </select> <br>
+
+            Pagamento: 
+            <input type="radio" name="pgto" value="1"> à vista
+            <input type="radio" name="pgto" value="3"> 3x 
+            <input type="radio" name="pgto" value="6"> 6x <br>
+
+            Time: 
+            <input type="checkbox" name="time" value="P"> Palmeiras
+            <input type="checkbox" name="time" value="S"> São Paulo
+            <input type="checkbox" name="time" value="C"> Corinthians
+            <input type="checkbox" name="time" value="ss"> Santos <br>
+
+            <input type="reset" name="limpar">
+            <input type="submit" name="enviar">
+
+        </form>
+    </body>
+    
+</html>

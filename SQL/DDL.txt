@@ -1,0 +1,74 @@
+---------------------------------------------------------------
+|                  DDL (Create, Alter e Drop)                 |
+---------------------------------------------------------------
+
+- Comando para excluir um banco de dados:
+
+    drop database (nome_do_banco)
+
+- Comando para deletar as tabelas (os dados serão excluídos):
+    
+    drop table (nome_da_mesa)
+
+---------------------------------------------------------------
+
+- Comando para criar os bancos de dados:
+
+    create database (nome_do_banco)
+
+- Comando para criar as tabelas:
+
+    create table (nome_da_mesa)
+
+---------------------------------------------------------------
+
+- Criando as tabelas
+
+    create table cursos(
+    idCurso int primary key auto_increment,
+    nome    varchar(50) not null,
+    cargahoraria  int   not null
+);
+
+* primary key (Chave Primária)
+* auto_increment (Gerar um codigo sequencial e automático)
+* not null (Regra de não nulo ou não vazio)
+
+---------------------------------------------------------------
+
+- Comando para inserir os dados na tabela
+
+Formato: insert into <tabela> (Lista de colunas) values (Lista de valores)
+
+    insert into cursos (nome,cargahoraria) values ("ADS",2500);
+    insert into cursos (nome,cargahoraria) values ("Gestão de Ti",2500);
+    insert into cursos (nome, cargahoraria) values ("Sistema de Informação",5000);
+    insert into cursos (nome, cargahoraria) values ("Engenharia da Computação",6000);
+
+---------------------------------------------------------------
+
+- Comando para alterar os dados na tabela
+
+Formato: update <tabela> set <campo>=<novo_valor>, ... ,campoN=<novo_valor> [where <condição>];
+(a clausula Where é opcional)
+
+    update cursos set nome='Análise e Desenvolvimento de Sistemas';
+    alterar todos os nomes dos cursos existentes para Análise e Desen. de Sistemas
+
+---------------------------------------------------------------
+
+- Comando para deletar os dados da tabela
+
+Formato: delete from <tabela> [where condição>];
+(a clausula Where é opcional)
+
+- Comando para deletar os dados da tabela do curso igual a 1
+    
+    delete from cursos where idCurso = 1;
+
+- Comando para apagar todos os dados existentes em uma tabela
+    
+    delete from cursos;
+
+---------------------------------------------------------------
+

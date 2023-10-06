@@ -1,0 +1,23 @@
+#menu {
+    background-color: black;
+}
+
+#menu ol {
+    list-style: none;
+}
+
+#menu ol li {
+    display: inline;
+}
+
+#menu ol li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 210px;
+    display: inline-block;
+}
+
+#menu ol li a:hover {
+    background-color: grey;
+    border-radius: 10px;
+}
