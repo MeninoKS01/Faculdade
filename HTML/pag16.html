@@ -1,0 +1,28 @@
+<html lang="pt-bt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Script</title>
+        <script>
+            function mudar(){
+                var cor = document.form1.cores.value;
+                document.bgColor = cor;
+            }
+        </script>
+    </head>
+
+    <body>
+        <form name="form1">
+            <select name="cores" onchange="mudar()">
+                <option value="white">Branco</option>
+                <option value="black">Preto</option>
+                <option value="red">Vermelho</option>
+                <option value="blue">Azul</option>
+                <option value="yellow">Amarelo</option>
+                <option value="green">Verde</option>
+            </select>
+        </form>
+    </body>
+
+</html>
