@@ -1,0 +1,63 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+        <style>
+            #text {
+                color: red;
+                padding: 30px;
+                font-size: 20px;
+                background-color: #e4b3b3;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>JavaScript</h1>
+
+        <p id="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac dolor ac lectus pulvinar aliquet. 
+            Suspendisse sagittis auctor facilisis. Etiam id turpis a lacus convallis molestie in a orci. In laoreet lorem nibh, 
+            non dapibus libero convallis vitae. Donec pretium, erat dignissim tempor tempor, odio quam faucibus tortor, 
+            vel tincidunt ipsum tellus in diam. Nulla facilisi. Nullam nec placerat est, et fermentum erat. Sed lacinia ultrices orci 
+            ac molestie. Nulla et dolor felis. Quisque volutpat nulla sit amet ultrices eleifend. Morbi feugiat, justo non cursus porttitor, 
+            est erat vehicula justo, in iaculis mi nibh non dui. Etiam sagittis justo mi, nec consequat nisl laoreet eu. Fusce imperdiet in 
+            erat aliquam consectetur. Suspendisse bibendum arcu enim, vitae feugiat risus fringilla eu. Quisque condimentum diam hendrerit, 
+            consectetur dolor at, volutpat velit.
+        </p>
+
+        <button onclick="mudarCor()"> Mudar Cor </button>
+        <button onclick="mudarBackground()"> Mudar Cor do Fundo </button>
+        <button onclick="mudarItalico()"> Itálico </button>
+        <button onclick="colocarBorda()"> Borda </button>
+        <button onclick="reset()">Reset</button>
+
+        <script>
+            function reset(){
+                document.getElementById("text").removeAttribute("style");
+            }
+
+            function mudarCor(){
+                document.getElementById("text").style.color = "green";
+            }
+
+            function mudarBackground(){
+                document.getElementById("text").style.backgroundColor = "#59b159"
+            }
+
+            function mudarItalico(){
+                document.getElementById("text").style.fontStyle = "italic"
+            }
+
+            function colocarBorda(){
+                document.getElementById("text").style.border = "5px solid green"
+            }
+
+        </script>
+
+    </body>
+
+</html>
