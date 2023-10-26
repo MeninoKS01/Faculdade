@@ -1,0 +1,69 @@
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> JavasScript </title>
+
+        <style>
+            #box {
+                border: 3px solid black;
+            }
+
+            #titulo {
+                display: flex;
+                align-items: center;
+                padding-left: 10px;
+                background-color: lightgray;
+            }
+
+            #titulo #saiba-mais{
+                padding-left: 10px;
+                
+            }
+
+            #content p {
+                padding-left: 10px;
+            }
+
+        </style>
+
+ 
+    </head>
+
+    <body>
+        <div id="box">
+
+            <div id="titulo"> 
+                <h2> JavasScript </h2> 
+
+                <div id="saiba-mais">
+                    <a href="#" onclick="exibir()"> Saiba mais </a> 
+                </div>
+            </div>
+
+            <div id="content"> 
+                <p>
+                    JavaScript é uma linguagem de programação interpretada estruturada, </br>
+                    de script em alto nível com tipagem dinâmica fraca e multiparadigma. </br>
+                    Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias </br>
+                    da World Wide Web.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("content").style.display = "none";
+
+            function exibir(){
+                if(document.getElementById("content").style.display == "block"){
+                    document.getElementById("content").style.display = "none";
+                }else{
+                    document.getElementById("content").style.display = "block";
+                } 
+            }
+        </script>
+
+    </body>
+
+</html>

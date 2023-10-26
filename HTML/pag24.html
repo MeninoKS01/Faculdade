@@ -1,0 +1,24 @@
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+        <div>
+            <img onmouseover="troca1()" onmouseout="troca2()" src="pic/7.jpg" alt="imagem" id="imagem">
+        </div>
+    </body>
+
+    <script>
+        function troca1(){
+            document.getElementById("imagem").src = "pic/5.jpg"
+        }
+        function troca2(){
+            document.getElementById("imagem").src = "pic/7.jpg"
+        }
+    </script>
+
+</html>
