@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-main (){
+int main (){
 
     float preco = printf("Digite o preco: ");
     scanf("%f", &preco);
