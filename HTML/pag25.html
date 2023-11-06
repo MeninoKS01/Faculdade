@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário validação</title>
+    </head>
+
+    <body>
+
+    <fieldset>
+        <legend> Cadastro</legend>
+        <form action="grava.jsp">
+            <label for="txtName">Nome</label>
+            <input type="text" name="txtName" id="txtName">
+        
+        </br>
+        
+            <label for="txtAge">Idade</label>
+            <input type="text" name="txtAge" id="txtAge">
+        
+        </br>
+        
+            <label for="txtEmail">Email</label>
+            <input type="email" name="txtEmail" id="txtEmail">
+        </form>
+
+        </br>
+
+        <input type="button" value="salvar" onclick="verificar()">
+
+    </fieldset>
+
+    <script>
+        function verificar(){
+
+            var verificar
+
+           var name = document.getElementById("txtName").value;
+           
+           if(name.length == 0){
+                verificar = false
+                document.getElementById("txtName").style.backgroundColor = "red"
+           }
+
+           var age = document.getElementById("txtAge").value;
+           
+           if(age.length == 0){
+                verificar = false
+                document.getElementById("txtAge").style.backgroundColor = "red"
+           }
+
+           var email = document.getElementById("txtEmail").value;
+           
+           if(email.indexOf("@") < 0){
+                verificar = false
+                document.getElementById("txtEmail").style.backgroundColor = "red"
+           }
+
+           if(enviar){
+            document.form.submit()
+           }
+
+        }
+    </script>
+
+    </body>
+
+</html>
